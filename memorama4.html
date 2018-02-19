@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="sonido.js"></script>
+<script type="text/javascript" src="memorama4.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+
+<meta name="viewport" content="width=device-width; height=device-height; maximum-scale=1.4; initial-scale=1.0; user-scalable=yes"/>
+</head>
+
+<body> 
+    <div id="contenido">
+        <div id="table_memoria">
+            <!--<div id="carta_1" onclick="virarCartaMemoria(this,\'<img src=1.png id=imgmem>\' )">
+                <img src=1.png id=imgmem>
+            </div>
+            ....
+            <div id="carta_12" onclick="virarCartaMemoria(this,\'<img src=1.png id=imgmem>\' )"></div>-->
+        </div>
+        <div id="memorama" class="memorama" ></div>
+        <div id="leyenda" class="leyenda"></div>
+        <div id="leyenda2" class="leyenda2"></div>
+        <div id="leyenda3" class="leyenda3"></div>
+            <!--<a href="memorama2.html" onMouseOver="document.getElementById(\'myaudio\').play()" target="_blank" ><img id="imgmem" src="mensaje1.png"></a>-->
+    </div>
+ 
+    <script>nuevaTabla ();</script>
+    <span id="dummy"></span>
+    <audio id="myaudio" src="varitamagica.mp3"></audio>
+</body>
+</html>
+
+
+
+<!--
+
+
+function virarCartaMemoria(carta,valor){
+    
+    if(carta.innerHTML == "" && valor_memoria.length < 2){
+        //carta.style.background = '#fff';
+        carta.innerHTML = valor;
+        if(valor_memoria.length == 0){
+            valor_memoria.push(valor);
+            memoria_carta_ids.push(carta.id);
+        } else if(valor_memoria.length == 1){
+                valor_memoria.push(valor);
+                memoria_carta_ids.push(carta.id);
+                if(valor_memoria[0] == valor_memoria[1]){
+					//alert(valor);
+					//document.getElementById("leyenda").textContent=document.getElementById("OK").textContent;
+					document.getElementById("leyenda").innerHTML=valor.replace(".png", "_.png");
+					document.getElementById('memorama').style.display = "block";
+					
+                    virada_carta += 2;
+                    //despejando los 2 array
+                    valor_memoria = [];
+                    memoria_carta_ids = [];
+                    //chekea si la mesa entera esta despedida
+                    if( virada_carta == array_memoria.length){
+                        //alert("Felicidades, memorama completado, presiona F5 para jugar de Nuevo!!!");
+						document.getElementById("leyenda2").innerHTML='<img src="felicidades.png">';
+						document.getElementById('leyenda2').style.display = "block";	
+						document.getElementById("leyenda3").innerHTML='<a href="http://www.iee-puebla.org.mx/memorama/index.html"><img src="salir.png"></a>';
+					
+						
+						//document.getElementById("leyenda").innerHTML="OK";
+                        //document.getElementById('table_memoria').innerHTML = "";
+                        //nuevaTabla();
+						playSound('aplausos.mp3');
+                        loadMedia ();
+                    }
+                } else{
+                    function virarAtras(){
+                        //las dos cartas se van a virar
+						//document.getElementById("leyenda").innerHTML='<img src="memorama.png">';
+						//document.getElementById('memorama').style.display = "none";
+                        var carta_1 = document.getElementById(memoria_carta_ids[0]);
+                        var carta_2 = document.getElementById(memoria_carta_ids[1]);
+                        carta_1.style.background = 'url(0.png) no-repeat';
+                        carta_1.innerHTML = "";
+                        carta_2.style.background = 'url(0.png) no-repeat';
+                        carta_2.innerHTML = "";
+                        //despejando los 2 arrays
+                        valor_memoria = [];
+                        memoria_carta_ids = [];
+                    }
+                    setTimeout(virarAtras, 700);
+                }
+            }
+
+        } 
+		playSound('clic.mp3');
+    }
+
+
+-->
+

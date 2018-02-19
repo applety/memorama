@@ -1,0 +1,106 @@
+
+html{
+
+background: rgba(234,118,0,1);
+background: -moz-linear-gradient(top, rgba(234,118,0,1) 0%, rgba(253,243,234,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,118,0,1)), color-stop(100%, rgba(253,243,234,1)));
+background: -webkit-linear-gradient(top, rgba(234,118,0,1) 0%, rgba(253,243,234,1) 100%);
+background: -o-linear-gradient(top, rgba(234,118,0,1) 0%, rgba(253,243,234,1) 100%);
+background: -ms-linear-gradient(top, rgba(234,118,0,1) 0%, rgba(253,243,234,1) 100%);
+background: linear-gradient(to bottom, rgba(234,118,0,1) 0%, rgba(253,243,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea7600', endColorstr='#fdf3ea', GradientType=0 );
+height:100%;
+}
+
+
+
+
+
+div#contenido
+{
+	/*position: relative;
+	width: 1320px;
+	margin: 0px auto;
+	border: 3px solid white;*/
+	border: 3px solid white;
+	margin-top:50px;
+  position: relative;
+    width: 80%;
+	height:100%;
+	/*margin-left:10%;
+	margin-right:10%;*/
+    border: 3px solid blue;
+}
+
+
+
+
+div#table_memoria{/*mesa para cartas*/
+    
+    width: 90%;
+    height: 3200px;
+    padding: 10px;
+    margin: 0px auto;
+    transition:0.3s;
+    font-weight: bold;
+	position: relative;
+	
+border: 3px solid white;
+}
+
+div#table_memoria > div{ /*Cartas*/
+    background: url(0.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 245px;
+    float: left;
+    margin: 10px;
+    font-size: 300%;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+	z-index: 1;
+	border: 3px solid black;
+    }
+
+#imgM{
+	width:100%;
+	height:100%;
+	border: 3px solid black;
+}
+
+.leyenda{/*imagen memorama inicio, al atinar es una leyenda*/
+	width:80%;
+	height: 300px;
+	text-align:center;
+	background-size: contain;
+  	position: absolute; left: 310px; top: 570px;
+	z-index: 2;
+	border: 3px solid purple;
+}
+
+
+
+
+.memorama{/*imagen memorama despues de encotrar 1*/
+	width:450px;
+	height:321px;
+   	background-image:url(memorama.png);
+	background-repeat:no-repeat;
+  	position: absolute; left: 70px; top: 600px;
+	z-index: 3;
+	border: 3px solid green;
+}
+
+
+.leyenda2{/*gano*/
+	width:400px;
+	height: 93px;
+	background-repeat:no-repeat;
+  	position: absolute; left: 950px; top: 770px;
+	z-index: 4;
+	display:none;
+	border: 3px solid red;
+}
+
